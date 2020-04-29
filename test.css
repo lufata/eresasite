@@ -1,9 +1,10 @@
 body {background-color: #A6E7D6;}
-h1 {color: #4D685A;}
-h2 {color:#4D685A}
-h3 {color:#4D685A}
-p {color: #69585f;}
+h1 {color:#4D685A;text-align: center;}
+h2 {color:#4D685A;text-align: center;}
+h3 {color:#4D685A;text-align: center;}
+p {color: #69585f;text-align: center;}
 li {color:#69585f}
 ul {color:#69585f}
 blockquote {color:#55D29E}
 code {color:#69585f}
+mark {color}
