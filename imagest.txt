@@ -1,1 +1,57 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>images demo page</title>
+
+  <style>
+    body {background:-webkit-linear-gradient(to bottom, #ffafbd, #ffc3a0)}
+
+    /* img and figure tags will affect all of those elements in the document */
+    img {border: 15px solid black;}
+
+    figure {}
+
+    /* the following rules apply to specific elements */
+    #one {}
+
+    #two {}
+
+    #three {}
+    
+  </style>
+</head>
+
+<body>
+  <h1>web demo for using images in web pages</h1>
+
+  <p>a demo for adding images in html and manipulating them with css. there
+    will be three versions of the same image tweaked in different ways.
+    there will also be either a tiled background image or a background
+    gradient.</p>
+
+  <!-- image with an id -->
+  <img src="images/mood.jpg" alt="girl with silly face" id="one">
+
+  <!-- image inside a box with an id -->
+  <div class="two">
+    <img src="images/mood.jpg">
+  </div>
+
+  <!-- box with content. we will load image through css -->
+  <div id="three">
+    <p>content</p>
+  </div>
+
+  <!-- addition of a figure tag that adds caption. preferred method for accessibility. slightly different default formatting, but we can change that -->
+  <figure>
+    <img src="images/mood.jpg" alt="girl with silly face">
+    <figcaption>mood for web design stuff</figcaption>
+  </figure>
+    <img src="images/you what.jpg" alt="fish from spongebob">
+    <figcaption>mood for web design stuff when chad cuts out because your wifi is bad</figcaption>
+  </figure>
+
+</body>
+
+</html>
