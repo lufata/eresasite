@@ -1,83 +1,79 @@
 
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <title>boxes demo page</title>
+<style>html {
+	box-sizing: border-box;
+}
 
-  <style>
-    /* the following is the box-sizing reset */
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
 
-    /* 
-    html {
-      box-sizing: border-box;
-    }
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
-    */
-
-    /* now back to regular styling */
-    html {box-sizing: border-box;}
-    body {background-color: #093028; background-image: linear-gradient(to bottom, #dce35b, #45b649); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+/* now back to regular styling */
+body {
+	background-color: #093028; background-image: linear-gradient(to bottom, #dce35b, #45b649); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
         background-attachment: fixed;
          background-size: cover;
-      color: #14080E;
-    }
+}
+h1 {color: #417266;}
 
-    header {text-align: center;}
+header {
+}
 
-    main {}
+main {
+}
 
-    #one {
-      background-color: #E9EB9E; padding-left: 30px; padding-top: 5px;padding-bottom: 5px;
-    }
+#one {
+	background-color: #c39bde;
+	border: 2px solid #8446ac;
+	padding: 10px;
+	width: 80%;
+	margin: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	text-align: center;
+	border-radius: 50px;
+	/*background: linear-gradient(to right, #be93c5, #7bc6cc);*/
+	background-image: src(https://i.ytimg.com/vi/dtPz75WaRUY/hqdefault.jpg);
+}
 
-    #two {
-      background-color: #96e072; padding-left: 30px; padding-top: 5px;padding-bottom: 10px;
-    }
+#two {
+	background-color: #417266;
+}
 
-    #three {
-      background-color: #3da35d; padding-left: 30px; padding-bottom: 10px; padding-top: 10px;
-    }
+#three {
+	background-color: #8dc183;
+	padding: 100px;
+}
 
-    #four {
-      background-color: greenyellow; padding-left: 30px; border: 5px solid #134611; text-align: center;
-    }
-  </style>
-</head>
+#four {
+	background-color: #49475b;
+}
+</style>
+<header>
+	<h1>web demo for exploring the box model in web pages</h1>
+</header>
 
-<body>
+<main>
+	<!-- a box is called a div in html -->
 
-  <header>
-    <h1>web demo for exploring the box model in web pages</h1>
-  </header>
+	<div id="one">
+		<p>content goes here.</p>
+	</div>
 
-  <main>
-    <!-- a box is called a div in html -->
+	<div id="two">
+		<p>content goes here.</p>
+	</div>
 
-    <div id="one">
-      <p>content goes here.</p>
-    </div>
+	<!-- this div has another div inside it -->
+	<div id="three">
+		<div id="four">
+			<p>content goes here.</p>
+		</div>
+		<p>wow this is way better.</p>
+	</div>
 
-    <div id="two">
-      <p>content goes here.</p>
-    </div>
-
-    <!-- this div has another div inside it -->
-    <div id="three">
-      <div id="four">
-        <p>content goes here.</p>
-      </div>
-      <p>content goes here.</p>
-    </div>
-
-  </main>
-
-</body>
-
-</html>
-
+</main>
