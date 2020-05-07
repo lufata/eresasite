@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>positioning demo page</title>
+    <!-- the following links reset and unify website settings -->
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css/typography.css"
+        rel="stylesheet" />
+
+    <style>
+        body {
+            color: #14080E;
+            background-color: #E8E5E7;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: #333;
+            color: #eee;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        section {
+            background: #346a83;
+            padding: 2rem;
+            margin: 2rem;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: inset 0 0 30px #00000055;
+            margin-bottom: 1rem;
+        }
+
+        div {
+            background: #35dffa;
+            padding: 1rem;
+            width: 40%;
+            border: 1px solid #cccccc55;
+            box-shadow: inset 0 0 30px #00000055;
+            margin-bottom: 1rem;
+        }
+
+        .static {}
+
+        .relative {}
+
+        .absolute {}
+
+        .fixed {}
+
+        .left {}
+
+        .right {}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>web demo for positioning and floating elements on a page</h1>
+        <p>this header has sticky positioning</p>
+    </header>
+
+    <main>
+        <!-- positioning options -->
+
+        <section>
+            <div class="static">
+                <p>this box has static positioning</p>
+            </div>
+
+            <div class="relative">
+                <p>this box has relative positioning</p>
+            </div>
+
+            <div class="absolute">
+                <p>this box has absolute positioning</p>
+            </div>
+
+            <div class="fixed">
+                <p>this box has fixed positioning</p>
+            </div>
+        </section>
+
+        <!-- floating options -->
+        <section>
+            <div class="left">
+                <p>this box will float to the left</p>
+            </div>
+
+            <h2>content headline</h2>
+            <p>The unicorn is a legendary creature that has been described
+                since antiquity as a beast with a single large, pointed,
+                spiraling horn projecting from its forehead. The unicorn was
+                depicted in ancient seals of the Indus Valley Civilization
+                and was mentioned by the ancient Greeks in accounts of
+                natural history by various writers, including Ctesias,
+                Strabo, Pliny the Younger, Aelian</p>
+
+            <p>In European folklore, the unicorn is often depicted as a
+                white horse-like or goat-like animal with a long horn and
+                cloven hooves (sometimes a goat's beard). In the Middle Ages
+                and Renaissance, it was commonly described as an extremely
+                wild woodland creature, a symbol of purity and grace, which
+                could be captured only by a virgin. In the encyclopedias,
+                its horn was said to have the power to render poisoned water
+                potable and to heal sickness. In medieval and Renaissance
+                times, the tusk of the narwhal was sometimes sold as unicorn
+                horn.</p>
+        </section>
+
+        <section>
+                <h2>content headline</h2>
+                <p>The unicorn is a legendary creature that has been described
+                    since antiquity as a beast with a single large, pointed,
+                    spiraling horn projecting from its forehead. The unicorn was
+                    depicted in ancient seals of the Indus Valley Civilization
+                    and was mentioned by the ancient Greeks in accounts of
+                    natural history by various writers, including Ctesias,
+                    Strabo, Pliny the Younger, Aelian</p>
+
+                <p>In European folklore, the unicorn is often depicted as a
+                    white horse-like or goat-like animal with a long horn and
+                    cloven hooves (sometimes a goat's beard). In the Middle Ages
+                    and Renaissance, it was commonly described as an extremely
+                    wild woodland creature, a symbol of purity and grace, which
+                    could be captured only by a virgin. In the encyclopedias,
+                    its horn was said to have the power to render poisoned water
+                    potable and to heal sickness. In medieval and Renaissance
+                    times, the tusk of the narwhal was sometimes sold as unicorn
+                    horn.</p>
+                    <div class="right">
+                        <p>this box will float to the right</p>
+                    </div>
+            
+        </section>
+    </main>
+
+</body>
+
+</html>
