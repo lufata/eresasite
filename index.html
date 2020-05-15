@@ -4,14 +4,16 @@
 <head>
 <meta charset="utf-8">
 <title>my index page</title>
-	<link rel="shortcut icon" href="images/robotindex.ico" />
 <style>
-    body {background-image: url(images/windex2.jpg);
-		background-position: top right; background-size: cover; background-repeat: no-repeat;}
+    body {background-color:#093028;
+      background-image:  linear-gradient(to bottom, #dce35b, #45b649); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;}
     h1 {color: #1d2f6f;}
     p {color:#1d2f6f}
     #one {background-color: greenyellow; opacity: 80%;
-	border: 6px solid #00b4d8;
+	border: 2px solid #00b4d8;
 	padding: 10px;
 	width: 80%;
 	margin: 50px;
@@ -22,16 +24,30 @@
 	border-radius: 50px;}
     #htext {color: black; font-weight: bold;}
 	#two {padding-left: 20%; padding-top: 10px;padding-bottom: 10px; color: #1d2f6f;
-        background-color: palegoldenrod; margin: 20%; margin-top: 20px; margin-bottom: auto; opacity: 80%
+        background-color: palegoldenrod; margin: 20%; margin-top: 20px; margin-bottom: auto; opacity: 80%;
+        line-spacing
     }
 	#three {padding: 30px; padding-top: 20px;
 	}
-a:hover {
+	a:hover {
             color: #323c32;
             background: #fff;
 
             text-decoration: none;
         }
+        ul {list-style: none;}
+        ul li::before {
+    content: "";
+    background-image: url(images/robots.ico);
+    background-size: contain;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.1rem;
+    margin-right: 0.2rem;
+    font-size: large;
+  }
 </style>
 </head>
                 
@@ -43,12 +59,13 @@ a:hover {
     </div>
 </div>
 <div id= two>
-<li><a href="skates.html" target="_blank">text.html</a></li>
+<ul><li><a href="skates.html" target="_blank">text.html</a></li>
 <li><a href="imagest.html" target="_blank">image.html</a>
 <li><a href="boxes.html" target="_blank">boxes.html</a></li>
-<li><a href="positioning.html" target="_blank">positioning.html</a></li>
-<li><a href="seahorse.html" target="_blank">seahorse.html</a></li>
+<li><a href="positioning.html" target="_blank">positioning.html</a></li></ul>
 </body></div>
-<div id= three></div>
+<div id= three>hhhhhhhhhhhhhhhhhhhhhhh</div>
+
+
 
 </html>
