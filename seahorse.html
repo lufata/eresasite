@@ -5,16 +5,98 @@
 <head>
   <meta charset="utf-8">
   <title>seahorse serenity</title>
-  <link rel="shortcut icon" href="images/robotseahorse.ico" />
+  <link rel="shortcut icon" href="images/robot.ico" />
   <style>
-    
+        .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background: #BCEDF6;
+      width: 80%;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* layout breakdown */
+    header {
+    }
+
+    main {
+
+    }
+
+    footer {
+
+    }
+
+    /* header content */
+    header h1 {
+      background: #50C5B7;
+      width: 50%;
+      float: left;
+      height 150px;
+      border-radius: 10px
+    }
+
+    header img {
+      background: blue;
+      width: 50%;
+      float: right;
+      height: 150px;
+    }
+
+    /* main content */
+    nav {
+      width: 30%; 
+      float: left; border-color: black solid 20px;
+    }
+
+    article {
+      width: 70%; 
+      float: left;
+      padding-left: 1rem;
+      color: #320E3B;
+    }
+
+    /* nav stuff */
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      display: block;
+      background: #6B7FD7;
+      color: white;
+      height: 2rem;
+      margin-bottom: .5rem;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    nav a:hover {background: white; color: #6B7FD7;}
   </style>
 </head>
 
 <body>
   <header class="clearfix">
-    <h1>header info here</h1>
-    <img src="#" alt="seahorses are fun" />
+    <h1>i wish i could see :(</h1>
+    <img src="images/seahorse.jpg" alt="seahorses are fun" />
   </header>
 
   <main class="clearfix">
@@ -86,5 +168,7 @@
     <p>&copy; Seahorse Serenity 2020</p>
   </footer>
 </body>
+
+</html>
 
 </html>
