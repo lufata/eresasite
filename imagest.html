@@ -3,8 +3,7 @@
 
 <head>
   <title>images demo page</title>
-<link rel="shortcut icon" href="images/robotcamera.ico" />
-  
+  <link rel="shortcut icon" href="images/robotcamera.ico" />
   <style>
      body {
       background-color:#093028;
@@ -15,16 +14,18 @@
     }
 
     /* img and figure tags will affect all of those elements in the document */
-    img {border: 15px solid black;}
+    img {}
 
     figure {}
 
     /* the following rules apply to specific elements */
-    #one {}
+    #one {border: 15px solid black; filter: saturate(500);}
 
-    #two {}
+    #two {border: 15px solid black; border-radius: 20px; opacity:; border-right: grey solid 20px;border-top: lightslategray 20px solid; ;}
 
-    #three {}
+    #three {border-bottom-left-radius: 50px; border-bottom-right-radius: 70px; border-top-left-radius: 120px; border-top-right-radius: 20%;}
+
+    #fish {filter: saturate(7);}
     
   </style>
 </head>
@@ -42,7 +43,7 @@
 
   <!-- image inside a box with an id -->
   <div class="two">
-    <img src="images/mood.jpg">
+    <img src="images/mood.jpg" id="two">
   </div>
 
   <!-- box with content. we will load image through css -->
@@ -52,10 +53,10 @@
 
   <!-- addition of a figure tag that adds caption. preferred method for accessibility. slightly different default formatting, but we can change that -->
   <figure>
-    <img src="images/mood.jpg" alt="girl with silly face">
+    <img src="images/mood.jpg" alt="girl with silly face" id="three">
     <figcaption>mood for web design stuff</figcaption>
   </figure>
-    <img src="images/you what.jpg" alt="fish from spongebob">
+    <img src="images/you what.jpg" alt="fish from spongebob" id="fish">
     <figcaption>mood for web design stuff when chad cuts out because your wifi is bad</figcaption>
   </figure>
 
