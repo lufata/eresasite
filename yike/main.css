@@ -20,7 +20,7 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: #93BEDF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,5 +31,5 @@ ul {
   }
 
   .active {
-    background-color: #4CAF50;
+    background-color: #8377D1;
   }
